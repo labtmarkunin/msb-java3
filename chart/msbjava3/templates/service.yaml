@@ -20,12 +20,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: schedule-service-nodeport
+  name: msbjava3-service
   namespace: default
 spec:
   type: NodePort
   ports:
     - port: 9080
-      nodePort: 32333
+      nodePort: 32366
   selector:
     app: "{{  .Chart.Name }}-selector"
