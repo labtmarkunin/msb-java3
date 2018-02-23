@@ -3,8 +3,8 @@
 replicaCount: 1
 revisionHistoryLimit: 1
 image:
-  repository: msbjava3
-  tag: v1.0.0
+  repository: registry
+  tag: imagetag
   pullPolicy: IfNotPresent
   pullSecret: regsecret
   resources:
