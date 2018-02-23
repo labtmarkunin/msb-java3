@@ -11,5 +11,7 @@ spec:
     port: {{ .Values.service.servicePort }}
   - name: https
     port: {{ .Values.service.servicePortHttps }}
+  - name: nodePort
+    port: {{ .Values.service.nodePort }}
   selector:
     app: "{{  .Chart.Name }}-selector"
