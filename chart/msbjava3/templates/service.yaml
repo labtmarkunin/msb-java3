@@ -14,3 +14,16 @@ spec:
     port: {{ .Values.service.servicePortHttps }}
   selector:
     app: "{{  .Chart.Name }}-selector"
+    
+apiVersion: v1
+kind: Service
+metadata:
+  name: schedule-service-nodeport
+  namespace: default
+spec:
+  type: NodePort
+  ports:
+    - port: 9080
+      nodePort: 32333
+  selector:
+    app: "{{  .Chart.Name }}-selector"
