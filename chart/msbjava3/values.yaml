@@ -4,7 +4,7 @@ replicaCount: 1
 revisionHistoryLimit: 1
 image:
   repository: registry
-  tag: 'imagetag'
+  tag: imagetag
   pullPolicy: IfNotPresent
   pullSecret: regsecret
   resources:
